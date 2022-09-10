@@ -15,6 +15,7 @@ public class Code03_InsertionSort {
 		}
 	}
 
+	// 两数交换，但要求内存地址不同的数（值可相同）
 	public static void swap(int[] arr, int i, int j) {
 		arr[i] = arr[i] ^ arr[j];
 		arr[j] = arr[i] ^ arr[j];

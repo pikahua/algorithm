@@ -2,6 +2,7 @@ package org.example.course.base.p1;
 
 public class Code09_FindOneLessValueIndex {
 
+	// 局部最小值
 	public static int getLessIndex(int[] arr) {
 		if (arr == null || arr.length == 0) {
 			return -1; // no exist

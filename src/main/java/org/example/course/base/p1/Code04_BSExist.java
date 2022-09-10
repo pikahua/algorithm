@@ -2,6 +2,7 @@ package org.example.course.base.p1;
 
 public class Code04_BSExist {
 
+	// 在一个有序数组中，找某个数是否存在  二分查找
 	public static boolean exist(int[] sortedArr, int num) {
 		if (sortedArr == null || sortedArr.length == 0) {
 			return false;

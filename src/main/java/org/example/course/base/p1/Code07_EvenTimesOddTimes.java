@@ -2,6 +2,7 @@ package org.example.course.base.p1;
 
 public class Code07_EvenTimesOddTimes {
 
+	// 只有一个数出现奇数次，其余数出现偶数次，找出那个数
 	public static void printOddTimesNum1(int[] arr) {
 		int eO = 0;
 		for (int cur : arr) {
@@ -10,13 +11,16 @@ public class Code07_EvenTimesOddTimes {
 		System.out.println(eO);
 	}
 
+	// 有两个数出现奇数次，其余数出现偶数次，找出那个数
 	public static void printOddTimesNum2(int[] arr) {
 		int eO = 0, eOhasOne = 0;
 		for (int curNum : arr) {
 			eO ^= curNum;
 		}
+		// 找出最低位的1
 		int rightOne = eO & (~eO + 1);
 		for (int cur : arr) {
+			// 该判断可以将两个数分开
 			if ((cur & rightOne) != 0) {
 				eOhasOne ^= cur;
 			}
