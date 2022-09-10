@@ -4,13 +4,19 @@ import java.util.Arrays;
 
 public class Code03_HeapSort {
 
+	// 堆排从小到大，构建大根堆，通过每步移除堆顶，size--完成排序
 	public static void heapSort(int[] arr) {
 		if (arr == null || arr.length < 2) {
 			return;
 		}
-		for (int i = 0; i < arr.length; i++) {
-			heapInsert(arr, i);
+//		for (int i = 0; i < arr.length; i++) { // O(N)
+//			heapInsert(arr, i); // O(log N)
+//		}
+		// 整个数组调整为大根堆，对上面方法优化后O(n)
+		for (int i = arr.length - 1; i >= 0; i--) {
+			heapify(arr, i, arr.length);
 		}
+
 		int size = arr.length;
 		swap(arr, 0, --size);
 		while (size > 0) {
@@ -19,6 +25,7 @@ public class Code03_HeapSort {
 		}
 	}
 
+	// 堆插入，从底向上
 	public static void heapInsert(int[] arr, int index) {
 		while (arr[index] > arr[(index - 1) / 2]) {
 			swap(arr, index, (index - 1) /2);
@@ -26,6 +33,7 @@ public class Code03_HeapSort {
 		}
 	}
 
+	// 堆化，从顶向下
 	public static void heapify(int[] arr, int index, int size) {
 		int left = index * 2 + 1;
 		while (left < size) {

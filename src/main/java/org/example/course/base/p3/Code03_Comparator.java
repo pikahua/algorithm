@@ -5,6 +5,11 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.TreeSet;
 
+// 比较器
+// 如果返回负数，认为第一个参数应该排在前面
+// 如果返回负数，认为第一个参数应该排在前面
+// 如果返回0，认为谁放前面都可以
+// 如果在堆中使用，以上的前面改成上面
 public class Code03_Comparator {
 
 	public static class Student {
