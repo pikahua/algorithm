@@ -2,6 +2,7 @@ package org.example.course.base.p3;
 
 import java.util.Arrays;
 
+// 计数排序，限制在于数太大，占用太大空间
 public class Code01_CountSort {
 
 	// only for 0~200 value
