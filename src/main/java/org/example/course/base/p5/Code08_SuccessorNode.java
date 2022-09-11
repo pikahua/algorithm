@@ -1,5 +1,7 @@
 package org.example.course.base.p5;
 
+// 在二叉树中找到一个节点的后继节点
+// 在二叉树的中序遍历的序列中，node的下一个节点叫作node的后继节点
 public class Code08_SuccessorNode {
 
 	public static class Node {
@@ -18,9 +20,12 @@ public class Code08_SuccessorNode {
 			return node;
 		}
 		if (node.right != null) {
+			// 有右子树，他的右子树最左节点是后继节点
 			return getLeftMost(node.right);
 		} else {
+			// 无右子树
 			Node parent = node.parent;
+			// 当前节点是其父节点右孩子
 			while (parent != null && parent.left != node) {
 				node = parent;
 				parent = node.parent;

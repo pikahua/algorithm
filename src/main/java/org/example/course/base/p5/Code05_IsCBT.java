@@ -2,6 +2,7 @@ package org.example.course.base.p5;
 
 import java.util.LinkedList;
 
+// 何判断一颗二叉树是完全二叉树
 public class Code05_IsCBT {
 
 	public static class Node {

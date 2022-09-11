@@ -1,5 +1,7 @@
 package org.example.course.base.p5;
 
+// 判断一颗二叉树是否是平衡二叉树？
+// 套路解法：树形DP，从两边子树拿信息
 public class Code06_IsBalancedTree {
 
 	public static class Node {

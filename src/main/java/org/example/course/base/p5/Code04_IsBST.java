@@ -2,6 +2,7 @@ package org.example.course.base.p5;
 
 import java.util.LinkedList;
 
+// 判断一颗二叉树是否是搜索二叉树
 public class Code04_IsBST {
 
 	public static class Node {
