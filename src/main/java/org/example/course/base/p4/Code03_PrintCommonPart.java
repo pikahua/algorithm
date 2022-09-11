@@ -1,5 +1,6 @@
 package org.example.course.base.p4;
 
+// 打印两个有序链表的公共部分
 public class Code03_PrintCommonPart {
 
 	public static class Node {

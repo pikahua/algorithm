@@ -1,5 +1,6 @@
 package org.example.course.base.p4;
 
+// 两个单链表相交的一系列问题
 public class Code07_FindFirstIntersectNode {
 
 	public static class Node {

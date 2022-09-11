@@ -2,6 +2,7 @@ package org.example.course.base.p4;
 
 import java.util.Stack;
 
+// 断一个链表是否为回文结构
 public class Code04_IsPalindromeList {
 
 	public static class Node {

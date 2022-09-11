@@ -1,5 +1,6 @@
 package org.example.course.base.p4;
 
+// 反转单向和双向链表
 public class Code02_ReverseList {
 
 	public static class Node {

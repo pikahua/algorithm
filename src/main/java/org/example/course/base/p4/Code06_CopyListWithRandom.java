@@ -2,6 +2,7 @@ package org.example.course.base.p4;
 
 import java.util.HashMap;
 
+// 复制含有随机指针节点的链表
 public class Code06_CopyListWithRandom {
 
 	public static class Node {
