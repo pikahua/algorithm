@@ -3,6 +3,7 @@ package org.example.course.base.p5;
 import java.util.LinkedList;
 import java.util.Queue;
 
+// 二叉树的序列化和反序列化
 public class Code09_SerializeAndReconstructTree {
 
 	public static class Node {

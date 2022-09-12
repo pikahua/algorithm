@@ -1,5 +1,6 @@
 package org.example.course.base.p5;
 
+// 折纸问题
 public class Code10_PaperFolding {
 
 	public static void printAllFolds(int N) {
