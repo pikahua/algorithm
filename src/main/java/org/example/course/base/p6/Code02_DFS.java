@@ -18,6 +18,7 @@ public class Code02_DFS {
 			Node cur = stack.pop();
 			for (Node next : cur.nexts) {
 				if (!set.contains(next)) {
+					// 还得把自己加进去
 					stack.push(cur);
 					stack.push(next);
 					set.add(next);

@@ -11,15 +11,15 @@ public class Code01_BFS {
 			return;
 		}
 		Queue<Node> queue = new LinkedList<>();
-		HashSet<Node> map = new HashSet<>();
+		HashSet<Node> set = new HashSet<>();
 		queue.add(node);
-		map.add(node);
+		set.add(node);
 		while (!queue.isEmpty()) {
 			Node cur = queue.poll();
 			System.out.println(cur.value);
 			for (Node next : cur.nexts) {
-				if (!map.contains(next)) {
-					map.add(next);
+				if (!set.contains(next)) {
+					set.add(next);
 					queue.add(next);
 				}
 			}

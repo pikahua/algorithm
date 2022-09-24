@@ -6,6 +6,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
+// 拓扑排序
+// 要求有向图，且有入度为0的节点，且没有环，在代码编译中有应用
+// 先找入度为0的点，擦除该点及其边，再找下个入度为0的点
 public class Code03_TopologySort {
 
 	// directed graph and no loop

@@ -6,6 +6,8 @@ import java.util.PriorityQueue;
 import java.util.Set;
 
 // undirected graph only
+// 最小生成树
+// 依次解锁点，将该点的边加入小根堆，依次从小挑选不包含已有点的边
 public class Code05_Prim {
 
 	public static class EdgeComparator implements Comparator<Edge> {

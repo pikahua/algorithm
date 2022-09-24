@@ -8,6 +8,8 @@ import java.util.PriorityQueue;
 import java.util.Set;
 
 //undirected graph only
+// 最小生成树，并查集
+// 方案：优先队列挑选权值最小的边，抛弃形成环的边，实现：判断边的两个点是否在同一集合上，在则形成环抛弃，不在则选中，并将两个点所在集合合并
 public class Code04_Kruskal {
 
 	// Union-Find Set
