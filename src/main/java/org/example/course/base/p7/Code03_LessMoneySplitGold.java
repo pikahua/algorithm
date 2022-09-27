@@ -3,6 +3,7 @@ package org.example.course.base.p7;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
+// 金条分割，最小花费，哈夫曼编码问题
 public class Code03_LessMoneySplitGold {
 
 	public static int lessMoney(int[] arr) {

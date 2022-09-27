@@ -1,5 +1,6 @@
 package org.example.course.base.p7;
 
+// 前缀树，用于字符自动补完和拼写检查。
 public class Code01_TrieTree {
 
 	public static class TrieNode {

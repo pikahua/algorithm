@@ -3,6 +3,7 @@ package org.example.course.base.p7;
 import java.util.Arrays;
 import java.util.Comparator;
 
+// 会议室进行的宣讲的场次最多
 public class Code04_BestArrange {
 
 	public static class Program {

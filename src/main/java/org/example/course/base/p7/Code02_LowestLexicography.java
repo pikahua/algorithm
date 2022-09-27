@@ -3,6 +3,7 @@ package org.example.course.base.p7;
 import java.util.Arrays;
 import java.util.Comparator;
 
+// 字符串拼接最小的字典序
 public class Code02_LowestLexicography {
 
 	public static class MyComparator implements Comparator<String> {
