@@ -1,5 +1,6 @@
 package org.example.course.promotion.p3;
 
+// 解决最长回文串问题，O(n)
 public class Code02_Manacher {
 
 	public static char[] manacherString(String str) {

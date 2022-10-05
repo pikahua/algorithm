@@ -1,5 +1,6 @@
 package org.example.course.promotion.p3;
 
+// indexOf()，O(n)
 public class Code01_KMP {
 
 	public static int getIndexOf(String s, String m) {
@@ -24,6 +25,7 @@ public class Code01_KMP {
 		return i2 == str2.length ? i1 - i2 : -1;
 	}
 
+	// 当前位置前最长前缀和后缀的匹配长度，不包含整体
 	public static int[] getNextArray(char[] ms) {
 		if (ms.length == 1) {
 			return new int[] { -1 };
