@@ -23,6 +23,7 @@ public class Code05_BobDie {
 		return live;
 	}
 
+	// 最大公约数
 	public static long gcd(long m, long n) {
 		return n == 0 ? m : gcd(n, m % n);
 	}
