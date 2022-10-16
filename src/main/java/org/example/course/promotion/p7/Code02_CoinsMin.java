@@ -73,6 +73,28 @@ public class Code02_CoinsMin {
 		return arr;
 	}
 
+	// 自己实现一维
+	public static int minCoins3(int[] arr, int aim) {
+		int[] dp = new int[aim + 1];
+		for (int i = 1; i <= aim; i++) {
+			dp[i] = -1;
+		}
+		for (int i = 1; i <= aim; i++) {
+			int min = -1;
+			for (int j = 0; j < arr.length; j++) {
+				if (i - arr[j] >= 0 && dp[i - arr[j]] != -1) {
+					if (min == -1) {
+						min = dp[i - arr[j]] + 1;
+					} else {
+						min = Math.min(min, dp[i - arr[j]] + 1);
+					}
+				}
+			}
+			dp[i] = min;
+		}
+		return dp[aim];
+	}
+
 	public static void main(String[] args) {
 		int len = 10;
 		int max = 10;
@@ -80,7 +102,7 @@ public class Code02_CoinsMin {
 		for (int i = 0; i < testTime; i++) {
 			int[] arr = generateRandomArray(len, max);
 			int aim = (int) (Math.random() * 3 * max) + max;
-			if (minCoins1(arr, aim) != minCoins2(arr, aim)) {
+			if (minCoins1(arr, aim) != minCoins3(arr, aim)) {
 				System.out.println("ooops!");
 				break;
 			}
